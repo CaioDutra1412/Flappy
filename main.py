@@ -224,6 +224,9 @@ def main():
                     if evento.key == pygame.K_SPACE:
                         for passaro in passaros:
                             passaro.pular()
+                if evento.type == pygame.MOUSEBUTTONDOWN:
+                    for passaro in passaros:
+                        passaro.pular()
 
             for passaro in passaros:
                 passaro.mover()
